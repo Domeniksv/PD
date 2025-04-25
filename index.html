@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzdevumi</title>
+</head>
+<body>
+
+    <h1>Uzdevumi</h1>
+
+    <!-- Balsošanas kontrole -->
+    <h2>Balsošanas kontrole</h2>
+    <p id="vards">Vārds: Pēteris</p>
+    <p id="vecums">Vecums: 18</p>
+    <p id="pilsonis">Pilsonis: true</p>
+    <p id="balsot-result"></p>
+
+    <!-- Atzīmes izvērtēšana -->
+    <h2>Atzīmes izvērtēšana</h2>
+    <p>Ievadiet atzīmi (0-100):</p>
+    <input type="number" id="atzime" placeholder="Ievadiet atzīmi">
+    <button onclick="atzimesIzverte()">Pārbaudīt atzīmi</button>
+    <p id="atzimes-result"></p>
+
+    <!-- Masīva elementu apstrāde -->
+    <h2>Masīva elementu apstrāde</h2>
+    <p>Saraksts:</p>
+    <ul id="masivs"></ul>
+    <button onclick="izvaditMasivu()">Izvadīt sarakstu</button>
+    <button onclick="izvaditMasivuApgriezti()">Izvadīt sarakstu apgrieztā secībā</button>
+
+    <!-- Kalkulators -->
+    <h2>Kalkulators</h2>
+    <p>Ievadiet pirmo skaitli:</p>
+    <input type="text" id="operand1" placeholder="Pirmais skaitlis">
+    <p>Ievadiet otro skaitli:</p>
+    <input type="text" id="operand2" placeholder="Otrais skaitlis">
+    <p>Ievadiet operatoru (+, -, *, /):</p>
+    <input type="text" id="operator" placeholder="Operatoru">
+    <button onclick="calculate()">Aprēķināt</button>
+    <p id="calculator-result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
